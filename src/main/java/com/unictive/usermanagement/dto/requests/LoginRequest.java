@@ -10,11 +10,11 @@ import lombok.Data;
 public class LoginRequest {
 
     @NotBlank(message = "Username is required")
-    @Schema(description = "Username", example = "fajar")
+    @Schema(description = "Username", example = "superadmin")
     private String username;
 
     @NotBlank(message = "Password is required")
     @Size(min = 6, message = "Password must be at least 6 characters")
-    @Schema(description = "Password", example = "rahasia")
+    @Schema(description = "Password", example = "admin123")
     private String password;
 }
