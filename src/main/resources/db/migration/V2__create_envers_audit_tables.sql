@@ -7,7 +7,7 @@
 CREATE TABLE users_aud (
                            id              BIGINT       NOT NULL,
                            rev             INTEGER      NOT NULL REFERENCES revinfo(rev),
-                           revtype         SMALLINT     NOT NULL,  -- 0=ADD 1=MOD 2=DEL
+                           revtype         SMALLINT     NOT NULL,
                            username        VARCHAR(100),
                            email           VARCHAR(255),
                            password        VARCHAR(255),
